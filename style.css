@@ -104,29 +104,8 @@
         font-size: 2rem;
     }
     
-    .mcdonough-area-page .btn-search {
-        display: inline-block;
-        background-color: #0064a6;
-        color: var(--primary-blue);
-        text-decoration: none;
-        padding: 18px 35px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        border-radius: 50px;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        border: 2px solid transparent; /* Base border */
-    }
-
-    /* FIX: Enhanced Button Highlight/Hover effect */
-    .mcdonough-area-page .btn-search:hover {
-        background-color: #f0f8ff;
-        transform: scale(1.06); /* Slightly more prominent scale */
-        /* Added a clear blue glow/highlight using box-shadow */
-        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5), 0 6px 15px rgba(0,0,0,0.2); 
-        color: var(--primary-dark);
-        border: 2px solid var(--primary-blue);
-    }
+    /* REMOVED: .mcdonough-area-page .btn-search CSS */
+    /* REMOVED: .mcdonough-area-page .btn-search:hover CSS */
 
     /* --- Seller Section --- */
     .mcdonough-area-page .seller-section {
