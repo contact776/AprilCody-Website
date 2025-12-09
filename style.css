@@ -97,7 +97,7 @@
     .mcdonough-area-page .search-cta p {
         color: #fff; 
         margin-bottom: 25px;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        text-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Subtle shadow for depth */
     }
 
     .mcdonough-area-page .search-cta h2 {
@@ -115,13 +115,14 @@
         border-radius: 50px;
         transition: all 0.3s ease;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        border: 2px solid transparent; 
+        border: 2px solid transparent; /* Base border */
     }
 
     /* FIX: Enhanced Button Highlight/Hover effect */
     .mcdonough-area-page .btn-search:hover {
         background-color: #f0f8ff;
-        transform: scale(1.06); 
+        transform: scale(1.06); /* Slightly more prominent scale */
+        /* Added a clear blue glow/highlight using box-shadow */
         box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5), 0 6px 15px rgba(0,0,0,0.2); 
         color: var(--primary-dark);
         border: 2px solid var(--primary-blue);
