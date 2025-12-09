@@ -85,6 +85,7 @@
     /* NOTE: BACKGROUND AND TEXT COLOR FOR THIS SECTION ARE NOW SET INLINE BELOW */
     .mcdonough-area-page .search-cta {
         text-align: center;
+        color: #0064a6;
         padding: 50px;
         border-radius: 12px;
         margin-bottom: 50px;
