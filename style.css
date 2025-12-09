@@ -1,0 +1,154 @@
+<style>
+    /* --- CSS Variables & Reset --- */
+    :root {
+        --primary-blue: #0064a6;
+        --primary-dark: #004d82;
+        --text-color: #333;
+        --bg-light: #f4f8fb;
+    }
+
+    /* Primary Wrapper for CSS Isolation */
+    .mcdonough-area-page {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    /* --- Typography --- */
+    .mcdonough-area-page h1, 
+    .mcdonough-area-page h2 {
+        color: var(--primary-blue);
+        margin-bottom: 15px;
+    }
+
+    .mcdonough-area-page h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        border-bottom: 3px solid var(--primary-blue);
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+
+    .mcdonough-area-page p {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+
+    /* --- Animations (Keeping hover effects) --- */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- Sections --- */
+    .mcdonough-area-page .intro-section {
+        background-color: var(--bg-light);
+        padding: 30px;
+        border-radius: 8px;
+        border-left: 5px solid var(--primary-blue);
+        margin-bottom: 40px;
+    }
+
+    /* --- Attractions Grid --- */
+    .mcdonough-area-page .attractions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-bottom: 45px;
+    }
+
+    .mcdonough-area-page .attraction-card {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 25px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mcdonough-area-page .attraction-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 20px rgba(0, 100, 166, 0.15);
+        border-color: var(--primary-blue);
+    }
+
+    .mcdonough-area-page .attraction-card h3 {
+        color: var(--primary-blue);
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+
+    /* --- Search Button Section (CTA) --- */
+    .mcdonough-area-page .search-cta {
+        text-align: center;
+        background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+        color: white;
+        padding: 50px;
+        border-radius: 12px;
+        margin-bottom: 50px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* FIX: Changed color to pure white for legibility */
+    .mcdonough-area-page .search-cta h2,
+    .mcdonough-area-page .search-cta p {
+        color: #fff; 
+        margin-bottom: 25px;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .mcdonough-area-page .search-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .mcdonough-area-page .btn-search {
+        display: inline-block;
+        background-color: #fff;
+        color: var(--primary-blue);
+        text-decoration: none;
+        padding: 18px 35px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border: 2px solid transparent; 
+    }
+
+    /* FIX: Enhanced Button Highlight/Hover effect */
+    .mcdonough-area-page .btn-search:hover {
+        background-color: #f0f8ff;
+        transform: scale(1.06); 
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5), 0 6px 15px rgba(0,0,0,0.2); 
+        color: var(--primary-dark);
+        border: 2px solid var(--primary-blue);
+    }
+
+    /* --- Seller Section --- */
+    .mcdonough-area-page .seller-section {
+        border: 2px solid #e0e0e0;
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        background-color: #fff;
+    }
+
+    /* --- Footer --- */
+    .mcdonough-area-page .compliance-footer {
+        font-size: 0.85rem;
+        color: #666;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    /* --- Mobile Adjustments --- */
+    @media (max-width: 600px) {
+        .mcdonough-area-page h1 { font-size: 2rem; }
+        .mcdonough-area-page .search-cta { padding: 30px 20px; }
+        .mcdonough-area-page .btn-search { width: 100%; box-sizing: border-box; }
+    }
+</style>
