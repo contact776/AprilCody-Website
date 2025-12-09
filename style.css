@@ -84,6 +84,7 @@
     /* --- Search Button Section (CTA) --- */
     .mcdonough-area-page .search-cta {
         text-align: center;
+        /* RESTORED BLUE BACKGROUND for legibility */
         background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
         color: white;
         padding: 50px;
@@ -92,20 +93,19 @@
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
-    /* FIX: Changed color to pure white for legibility */
+    /* Text on the CTA section must be white to show up on the blue background */
     .mcdonough-area-page .search-cta h2,
     .mcdonough-area-page .search-cta p {
         color: #fff; 
         margin-bottom: 25px;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+        text-shadow: 0 1px 2px rgba(0,0,0,0.2); 
     }
 
     .mcdonough-area-page .search-cta h2 {
         font-size: 2rem;
     }
     
-    /* REMOVED: .mcdonough-area-page .btn-search CSS */
-    /* REMOVED: .mcdonough-area-page .btn-search:hover CSS */
+    /* Button CSS is intentionally removed here to allow main site CSS to style the .btn-search class */
 
     /* --- Seller Section --- */
     .mcdonough-area-page .seller-section {
